@@ -10,49 +10,23 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
 
-
         <link rel="icon" href="images/flag.png" type="image/gif">
+        <script src="animations.js"></script>
 
     </head>
-    <body>
-        <h1>Let's Take A Trip To Ecuador</h1>   
-        <!-- <h4 id="stick">p</h4> -->
-
-        <!--Guayaquil-->
-        <div id="parallax1">
-            HI
+    <body id="wecome">
+        <div id="w_container">
+            <h1>Lets Go To Ecuador</h1>
+            <h3>Pick A Character</h3>
+            <!-- http://jsfiddle.net/wG8K4/1/ -->
+            <form>
+                <!-- <select name='character'> -->
+                    <input type="image" id="image1" value='images/img1_temp.png' src="images/img1_temp.png" onclick='displayFormContents(this.form)'>
+                    <input type="image" id="image2" value='images/img2.png' src="images/img2.png" onclick='getCharacter(this.form)'>
+                <!-- </select> -->
+            </form>
+            <br>
+            <a href="ecua.html"><button>Enter Now!</button></a>
         </div>
-        <div class="options">
-            <p>OPTIONS LISTED HERE</p>
-        </div>
-
-        <!-- Quito -->
-        <div id="parallax2">
-            HEYO
-        </div>
-        <div class="options">
-            <p>OPTIONS LISTED HERE</p>
-        </div>
-
-        <!-- Cuenca -->
-        <div id="parallax3">
-            HEYO
-        </div>
-        <div class="options">
-            <p>OPTIONS LISTED HERE</p>
-        </div>
-
-        <!-- Santa Elena -->
-        <div id="parallax4">
-            HEYO
-        </div>
-        <div class="options">
-            <p>OPTIONS LISTED HERE</p>
-        </div>
-
-        <div id="parallax_end">
-            <h3 id="message">Thank You For Coming To This Trip With Me!</h3>
-        </div>
-
     </body>
 </html>
