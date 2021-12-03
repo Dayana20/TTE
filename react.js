@@ -1,110 +1,79 @@
-// // class NameForm extends React.Component {
-// //   constructor(props) {
-// //     super(props);
-// //     this.state = {value: ''};
-
-// //     this.handleChange = this.handleChange.bind(this);
-// //     this.handleSubmit = this.handleSubmit.bind(this);
-// //   }
-
-// //   handleChange(event) {
-// //     this.setState({value: event.target.value});
-// //   }
-
-// //   handleSubmit(event) {
-// //     alert('A name was submitted: ' + this.state.value);
-// //     event.preventDefault();
-// //   }
-
-// //   render() {
-// //     return (
-// //       <form onSubmit={this.handleSubmit}>
-// //         <label>
-// //           Name:
-// //           <input type="text" value={this.state.value} onChange={this.handleChange} />
-// //         </label>
-// //         <input type="submit" value="Submit" />
-// //       </form>
-// //     );
-// //   }
-// // }
-
-// // ReactDOM.render(
-// //   <NameForm />,
-// //   document.getElementById('root')
-// // );
-
-// const e = React.createElement;
-
-// class button extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = { liked: false };
-//     this.count = 0;
-//     this.message = "abc";
-//     this.value=0;
-
-//     // this.state = {value: ''};
-//     // this.handleChange = this.handleChange.bind(this);
-//     // this.handleSubmit = this.handleSubmit.bind(this);
-//   }
-
-//   render() {
-//     if (this.state.liked) {
-//         // this.count+=1;
-//         // if (this.count == 1){
-//         //     return e(
-//         //         'button',
-//         //         { onClick: () => this.setState({ liked: false }) },
-//         //         'I was clicked once'
-//         //       );
-//         // }
-//         return e('button',
-//           <input type="text" value={this.value} />, this.message
-//           );
-//     }
-
-//     return e(
-//       'button',
-//       { onClick: () => this.setState({ liked: true }) },
-//       this.message, 'Click Me!!'
-//     );
-
-//   }
-// }
-
-// const domContainer = document.querySelector('#root');
-// ReactDOM.render(e(button), domContainer);
-
-// _____________________________________________________________
-
-// ReactDOM.render(
-//   <img src='react_logo.png' height={200}/>,
-//   document.getElementById('root')
-// );
-
-const e = React.createElement;
-
-class button extends React.Component {
+// https://reactjs.org/
+class TodoApp extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { liked: false };
-    this.count = 0;
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   render() {
-    this.count+=1;
-    if (this.count>=1){
-      return e(<button id="b1">Now this is a button object</button>, this.count);
+    return React.createElement(
+      "div",
+      null,
+      React.createElement(
+        "h3",
+        null,
+        "TODO"
+      ),
+      React.createElement(TodoList, { items: this.state.items }),
+      React.createElement(
+        "form",
+        { onSubmit: this.handleSubmit },
+        React.createElement(
+          "label",
+          { htmlFor: "new-todo" },
+          "What needs to be done?"
+        ),
+        React.createElement("input", {
+          id: "new-todo",
+          onChange: this.handleChange,
+          value: this.state.text
+        }),
+        React.createElement(
+          "button",
+          null,
+          "Add #",
+          this.state.items.length + 1
+        )
+      )
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.text.length === 0) {
+      return;
     }
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      this.count,
-      'Click Me!'
+    const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+    this.setState(state => ({
+      items: state.items.concat(newItem),
+      text: ''
+    }));
+  }
+}
+
+class TodoList extends React.Component {
+  render() {
+    return React.createElement(
+      "ul",
+      null,
+      this.props.items.map(item => React.createElement(
+        "li",
+        { key: item.id },
+        item.text
+      ))
     );
   }
 }
 
-const domContainer = document.querySelector('#like_button_container');
-ReactDOM.render(e(button), domContainer);
+ReactDOM.render(React.createElement(TodoApp, null), document.getElementById('todos-example'));
+
+

@@ -14,20 +14,24 @@
         <script src="animations.js"></script>
 
     </head>
-    <body id="wecome">
+    <body id="welcome">
         <div id="w_container">
             <h1>Lets Go To Ecuador</h1>
             <h3>Pick A Character</h3>
             <!-- http://jsfiddle.net/wG8K4/1/ -->
+            <!-- https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript -->
             <form>
                 <!-- <select name='character'> -->
-                    <input type="image" id="image1" value='images/img1_temp.png' src="images/img1_temp.png" onclick='displayFormContents(this.form);return false;'>
-                    <!-- https://www.istockphoto.com/photo/ecuador-colibri-jacobin-m%C3%A2le-white-necked-jacobin-male-gm1306930234-397368431?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fecuador&utm_term=ecuador%3A%3A%3A -->
-                    <input type="image" id="image2" value='images/en.png' src="images/en.png" onclick='getCharacter(this.form);return false;'>
-                <!-- </select> -->
+                    <!-- https://pixabay.com/vectors/crab-crustacean-shellfish-seafood-42880/ -->
+                    <input type="image" id="image1" value='images/crab.png' src="images/crab.png" onclick='getCharacter0(this.form);return false;'>
+                    <!-- https://pixabay.com/illustrations/clipart-fish-sea-water-swim-3418189/ -->
+                    <input type="image" id="image2" value='images/fish.png' src="images/fish.png" onclick='getCharacter1(this.form);return false;'>
+                    <!-- https://pixabay.com/vectors/cartoon-octopus-orange-red-sea-2027746/ -->
+                    <input type="image" id="image3" value='images/octo.png' src="images/octo.png" onclick='getCharacter2(this.form);return false;'>
+                    <!-- </select> -->
             </form>
             <br>
-            <a href="ecua.html"><button>Enter Now!</button></a>
+            <a href="ecua.html"><button id="w_bu">Enter Now!</button></a>
         </div>
     </body>
 </html>

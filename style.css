@@ -20,7 +20,7 @@ body{
 #parallax1 {
     /* The image used */
     /* background-image: url("images/flag.png"); */
-    background-color: rgb(172, 106, 189);
+    background-color: #83c5be;
 
     /* Full height */
     height: 100%;
@@ -30,7 +30,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: grid;
+    grid-template-rows: auto, auto, auto, auto;
+    grid-template-columns: auto, auto, auto, auto;
+    /* text-align: center; */
 }
+
+#img1{
+    height:200px;
+    /* margin-left:-5%; */
+    grid-column: 1;
+    grid-row:2;
+}
+
+#food{
+    position: absolute;
+    right: 0px;
+}
+
 #parallax2 {
     /* The image used */
     /* background-image: url("images/las_penas.jpg"); */
@@ -97,6 +115,18 @@ body{
     text-align: center;
 }
 
+/* ecua.html */
+
+#img2{
+    height:200px;
+}
+#img3{
+    height:200px;
+}
+#img4{
+    height:200px;
+}
+
 
 /* welcome page */
 #image1{
@@ -105,14 +135,30 @@ body{
 #image2{
     height:200px;
 }
-#welcome{
-    display: flex;
-    align-items: center;
-    text-align: center;
+#image3{
+    height:200px;
 }
+
+#welcome{
+    background-color: #006D87;
+    overflow: hidden;
+}
+
 #w_container{
     margin-top: 10%;
 }
+#w_bu{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2vw;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgb(255, 39, 39);}
+}
+
 #c1{
     background-color: coral;
 }
@@ -120,4 +166,57 @@ body{
 .character{
     height:300px;
     background-color: pink;
+}
+
+/* https://codepen.io/Founts/pen/gmhcl?editors=0100 */
+  /* CSS talk bubble */
+.talk-bubble {
+    margin: 40px;
+    display: inline-block;
+    position: relative;
+      width: 200px;
+      height: auto;
+      background-color: lightyellow;
+}
+.border{
+    border: 8px solid #666;
+}
+.round{
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+
+}
+    
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: lightyellow transparent transparent lightyellow;
+}
+
+
+/* talk bubble contents */
+.talktext{
+    padding: 1em;
+    text-align: center;
 }
