@@ -23,10 +23,10 @@
                 </div>
             </div>
             <img id='img1' src="">
-            <img id="food" src="images/encebollado.png" onclick="changeText('food')">
-            <img id="food1" src="images/bolon.png" onclick="changeText('food1')">
-            <img id="food2" src="images/seis_de_marzo.jpg" onclick="changeText('food2')">
-            <img id="food3" src="images/carnaval.jpg" onclick="changeText('food3')">   
+            <img id="food" src="images/encebollado.png" onclick="changeText('food');completion()">
+            <img id="food1" src="images/bolon.png" onclick="changeText('food1');completion()">
+            <img id="food2" src="images/seis_de_marzo.jpg" onclick="changeText('food2');completion()">
+            <img id="food3" src="images/carnaval.jpg" onclick="changeText('food3');completion()">   
         </div>
         <div class="options">
             <a href="#parallax4"><button>Beach</button></a>
@@ -38,16 +38,16 @@
         <div id="parallax2">
             <div class="talk-bubble tri-right border round btm-left-in">
                 <div class="talktext">
-                    <h2 id="message">Welcome To Quito! <br>**Click Me**</h2>
+                    <h2 id="messageQ">Welcome To Quito! <br>**Click Me**</h2>
                 </div>
             </div>
             <img id='img2' src="" onclick="showImg();">
 
             <!-- <img id="tohide" src="images/guiti_pool.jpg"> -->
-            <img id="p2_img1" src="images/encebollado.png" onclick="changeText('food')">
-            <img id="p2_img2" src="images/bolon.png" onclick="changeText('food1')">
-            <img id="p2_img3" src="images/seis_de_marzo.jpg" onclick="changeText('food2')">
-            <img id="p2_img4" src="images/carnaval.jpg" onclick="changeText('food3')">   
+            <img id="p2_img1" src="images/casa_del_arbol.jpg" onclick="changeText('elem0');completion()">
+            <img id="p2_img2" src="images/equator.jpg" onclick="changeText('elem1');completion()">
+            <img id="p2_img3" src="images/volcano.jpg" onclick="changeText('elem2');completion()">
+            <img id="p2_img4" src="images/mercado.jpg" onclick="changeText('elem3');completion()">   
             
         </div>
 
@@ -59,11 +59,16 @@
         <div id="parallax3">
             <div class="talk-bubble tri-right border round btm-left-in">
                 <div class="talktext">
-                    <h2 id="message3">Welcome To Guayaquil!</h2>
+                    <h2 id="messageC">Welcome To Cuenca!</h2>
                 </div>
             </div>
             <img id='img3' src="">
-            HEYO
+            <img id="p3_img1" src="images/casa_del_arbol.jpg" onclick="changeText('elem0')">
+            <img id="p3_img2" src="images/equator.jpg" onclick="changeText('elem1')">
+            <img id="p3_img3" src="images/volcano.jpg" onclick="changeText('elem2')">
+            <img id="p3_img4" src="images/mercado.jpg" onclick="changeText('elem3')">   
+
+
         </div>
         <div class="options">
             <p>OPTIONS LISTED HERE</p>
@@ -73,33 +78,35 @@
         <div id="parallax4">
             <div class="talk-bubble tri-right border round btm-left-in">
                 <div class="talktext">
-                    <h2 id="message4">Welcome To Guayaquil!</h2>
+                    <h2 id="messageS">Welcome To Santa Elena!</h2>
                 </div>
             </div>
             <img id='img4' src="">
-            HEYO
+            <img id="p3_img1" src="images/casa_del_arbol.jpg" onclick="changeText('elem0')">
+            <img id="p3_img2" src="images/equator.jpg" onclick="changeText('elem1')">
+            <img id="p3_img3" src="images/volcano.jpg" onclick="changeText('elem2')">
+            <img id="p3_img4" src="images/mercado.jpg" onclick="changeText('elem3')">   
+
         </div>
         <div class="options">
             <p>OPTIONS LISTED HERE</p>
         </div>
 
-        <div id="parallax_end">
-            <h3 id="message">Thank You For Coming To This Trip With Me!</h3>
-        </div>
-
+        <h3 id="keepGoing">Check Out More Places!</h3>
+        <a id="theEnd" href="end.html">Finished!</a>
         <!-- USING REACT -->
         <!-- We will put our React component inside this div. -->
             <!-- We will put our React component inside this div. -->
-        <div id="todos-example"></div>
+        <!-- <div id="todos-example"></div> -->
 
         <!-- Load React. -->
         <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <!-- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> -->
+        <!-- <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script> -->
 
         <!-- Load our React component. -->
-        <script src="react.js"></script>
+        <!-- <script src="react.js"></script> -->
         
-        <h1>finished!</h1>
+        <!-- <h1>finished!!</h1> -->
     </body>
 </html>
