@@ -12,8 +12,8 @@ body{
 .options{
     /* Full height */
     height: 100%;
-    /* background-color: blanchedalmond; */
-    background-image: url(images/las_penas.jpg);
+    /* img from https://www.thoughtco.com/geography-of-ecuador-1434572 */
+    background-image: url(images/ecua.jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -112,6 +112,7 @@ body{
     /* background-color: palegoldenrod; */
 }
 
+/* Quito */
 #parallax2 {
     /* The image used */
     /* background-image: url("images/las_penas.jpg"); */
@@ -170,6 +171,12 @@ body{
     grid-row:2;
 }
 
+#gu{
+    margin-top: 20%;
+    grid-column: 2;
+    grid-row:1;
+}
+
 /* #tohide{
     height:400px;
     grid-column: 2;
@@ -177,13 +184,11 @@ body{
 } */
 
 /* CUENCA */
-#parallax3 {
+/* #parallax3 {
     background-color: rgb(172, 106, 189);
 
-    /* Full height */
     height: 100%;
 
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,26 +199,7 @@ body{
     margin-top: 20%;
     left:10%;
     height:200px;
-    /* background-color: tomato; */
-}
-
-#p3_img1{
-    margin-top: 10%;
-    height:200px;
-}
-#p3_img2{
-    /* display: none; */
-    margin-top: 10%;
-    height:200px;
-}
-#p3_img3{
-    /* display: none; */
-    height:200px;
-}
-#p3_img4{
-    /* display: none; */
-    height:200px;
-}
+} */
 
 
 /* Sanata Elena */
@@ -230,16 +216,45 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-
-/* #stick{
-    position: fixed;
-} */
-
-/* ecua.html */
 #img4{
+    /* margin-top: 5px; */
     height:200px;
+}
+
+#p3_img1{
+    /* margin-top: 10%; */
+    height:200px;
+}
+#p3_img2{
+    /* display: none; */
+    margin-top: 10%;
+    height:200px;
+}
+#p3_img3{
+    /* display: none; */
+    height:200px;
+}
+#p3_img4{
+    /* display: none; */
+    margin-top: 10%;
+    height:200px;
+}
+#s_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.set_ims{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: black; */
 }
 
 
@@ -336,6 +351,7 @@ body{
     text-align: center;
 }
 
+
 /* end page */
 #parallax_end{
     /* Full height */
@@ -362,8 +378,16 @@ body{
 
 #theEnd{
     display: none;
+    /* background-color: cadetblue; */
+    /* height: 100px; */
+    text-decoration: none;
+    /* color: cadetblue; */
+    color: tomato;
+    font-size: 2vw;
 }
-
+#theEnd:hover{
+    background-color: #FFDDD2;
+}
 #keepGoing{
     display: block;
     color: tomato;
