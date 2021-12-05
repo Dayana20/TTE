@@ -161,8 +161,8 @@ function completion(){
     }
     // alert(gua,cue,qui,san);
 }
-let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from Julio Jaramillo <br><audio src='sounds/alma_mia.mp3' autoplay> </audio><br>",
-            "A MI LINDO ECUADOR <br><audio src='sounds/lindo.mp3' autoplay> </audio><br>This song comes up everywhere when appreciating Ecuador",
+let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from Julio Jaramillo <br><img class='f_imgs' src='https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/I774BJTTGVFQLDJEXP2XRNTYYA.jpg'><br><audio src='sounds/alma_mia.mp3' autoplay> </audio><br>",
+            "A MI LINDO ECUADOR <br><audio src='sounds/lindo.mp3' autoplay> </audio><img class='f_imgs' src='https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMTk5NDAxMy9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY0MTQ3MzYxOX0.h1TPH1k8n_pB1FWxB_V1BnARecAU6NZwVhb9clcaAmM/img.jpg?width=1200&coordinates=0%2C90%2C0%2C91&height=600'><br>This song comes up everywhere when appreciating Ecuador",
             "There is a park dedicated to Iguanas In Guayaquil<br><img class='f_imgs' src='https://one-million-places.com/wp-content/uploads/2015/ecuador/guayaquil-ecuador-12.jpg'>",
             "September 26, all high school graduates go up to the flag one by one and stomp the ground in front of the flag<br><img class='f_imgs' src='https://lahora.com.ec/contenido/cache/45/adelantan-juramento-a-la-bandera-imagen-1-_20190922092741-2000x2000.jpg'>",
             "Las Penas: 444 steps <br><img class='f_imgs' src='https://media-cdn.tripadvisor.com/media/photo-s/03/e4/2b/c6/las-penas.jpg'>",
