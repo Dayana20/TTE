@@ -161,12 +161,12 @@ function completion(){
     }
     // alert(gua,cue,qui,san);
 }
-let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from Julio Jaramillo",
-            "A MI LINDO ECUADOR <br>SONG HERE<br>This song comes up everywhere when appreciating Ecuador",
-            "There is a park dedicated to Iguanas In Guayaquil",
-            "September 26, all high school graduates go up to the flag one by one and stomp the ground in front of the flag",
-            "Las Penas: 444 steps",
-            "Lanaguages spoken in Ecuador: Spanish and Kichwa (a Quechuan language of the Inca empire)"
+let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from Julio Jaramillo <br><audio src='sounds/alma_mia.mp3' autoplay> </audio><br>",
+            "A MI LINDO ECUADOR <br><audio src='sounds/lindo.mp3' autoplay> </audio><br>This song comes up everywhere when appreciating Ecuador",
+            "There is a park dedicated to Iguanas In Guayaquil<br><img class='f_imgs' src='https://one-million-places.com/wp-content/uploads/2015/ecuador/guayaquil-ecuador-12.jpg'>",
+            "September 26, all high school graduates go up to the flag one by one and stomp the ground in front of the flag<br><img class='f_imgs' src='https://lahora.com.ec/contenido/cache/45/adelantan-juramento-a-la-bandera-imagen-1-_20190922092741-2000x2000.jpg'>",
+            "Las Penas: 444 steps <br><img class='f_imgs' src='https://media-cdn.tripadvisor.com/media/photo-s/03/e4/2b/c6/las-penas.jpg'>",
+            "Lanaguages spoken in Ecuador: Spanish and Kichwa (a Quechuan language of the Inca empire) <br><img class='f_imgs' src='https://www.planv.com.ec/sites/default/files/yaku-eolz39ow8amkilj.jpg'> <br>Yaku Pérez Fighting For Indigenous Rights"
             ]
 function slide(){
     console.log("animayion");

@@ -407,6 +407,7 @@ body{
     background-color: #EDF6F9;
     display: none;
     text-align: center;
+    font-size: 2vw;
     /* -webkit-animation: slide 0.5s forwards; */
     /* -webkit-animation-delay: 2s; */
     /* animation: slide 0.5s forwards; */
@@ -462,4 +463,9 @@ body{
     background-color: whitesmoke;
     text-shadow: none;
     border-radius: 50%;
+}
+
+.f_imgs{
+    height:300px;
+    background-color: cadetblue;
 }
