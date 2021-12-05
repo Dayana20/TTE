@@ -9,7 +9,7 @@ body{
     /* try this */
     overflow-x: hidden;
 }
-.options{
+#options{
     /* Full height */
     height: 100%;
     /* img from https://www.thoughtco.com/geography-of-ecuador-1434572 */
@@ -28,7 +28,7 @@ body{
     /* border:solid;
     border-image: url(images/guiti_pool.jpg); */
 }
-.options button{
+#options button{
     background-color: transparent;
     border:transparent;
     cursor: pointer;
@@ -40,7 +40,7 @@ body{
     font-family: 'DM Serif Display', serif;
 }
 
-.options button:hover{
+#options button:hover{
     color:tomato;
     background-color: #83C5BE;
     text-shadow: none;
@@ -206,7 +206,7 @@ body{
 #parallax4 {
     /* The image used */
     /* background-image: url("images/las_penas.jpg"); */
-    background-color: rgb(172, 106, 189);
+    background-color: #E29578;
 
     /* Full height */
     height: 100%;
@@ -229,20 +229,24 @@ body{
 #p3_img1{
     /* margin-top: 10%; */
     height:200px;
+    border-radius: 30%;
 }
 #p3_img2{
     /* display: none; */
     margin-top: 10%;
     height:200px;
+    border-radius: 30%;
 }
 #p3_img3{
     /* display: none; */
     height:200px;
+    border-radius: 30%;
 }
 #p3_img4{
     /* display: none; */
     margin-top: 10%;
     height:200px;
+    border-radius: 30%;
 }
 #s_container{
     display: flex;
@@ -391,4 +395,71 @@ body{
 #keepGoing{
     display: block;
     color: tomato;
+}
+
+/* try this */
+/* https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition */
+#slide {
+    position: absolute;
+    right: -800px;
+    width: 800px;
+    height: 500px;
+    background-color: #EDF6F9;
+    display: none;
+    text-align: center;
+    /* -webkit-animation: slide 0.5s forwards; */
+    /* -webkit-animation-delay: 2s; */
+    /* animation: slide 0.5s forwards; */
+    /* animation-delay: 2s; */
+}
+
+@-webkit-keyframes slide {
+    100% { right: 0%; }
+}
+
+@keyframes slide {
+    100% { right: 10%; }
+}
+
+#funfact{
+    margin-left:-60%;
+    /* background-color: cadetblue; */
+}
+
+#options_facts{
+    /* Full height */
+    height: 100%;
+    /* img from https://www.thoughtco.com/geography-of-ecuador-1434572 */
+    background-image: url(images/ecua.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    border:solid 20px #EDF6F9;
+    /* border:solid;
+    border-image: url(images/guiti_pool.jpg); */
+}
+#options_facts button{
+    background-color: transparent;
+    border:transparent;
+    cursor: pointer;
+    font-size: 2em;
+    /* text-shadow: whitesmoke 5px 0 10px; */
+    text-shadow: 5px 10px 10px whitesmoke,
+              -3px 10px 12px whitesmoke,
+              10px -10px 22px whitesmoke;
+    font-family: 'DM Serif Display', serif;
+}
+
+#options_facts button:hover{
+    color:tomato;
+    background-color: whitesmoke;
+    text-shadow: none;
+    border-radius: 50%;
 }

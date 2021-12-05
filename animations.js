@@ -161,3 +161,24 @@ function completion(){
     }
     // alert(gua,cue,qui,san);
 }
+let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from Julio Jaramillo",
+            "A MI LINDO ECUADOR <br>SONG HERE<br>This song comes up everywhere when appreciating Ecuador",
+            "There is a park dedicated to Iguanas In Guayaquil",
+            "September 26, all high school graduates go up to the flag one by one and stomp the ground in front of the flag",
+            "Las Penas: 444 steps",
+            "Lanaguages spoken in Ecuador: Spanish and Kichwa (a Quechuan language of the Inca empire)"
+            ]
+function slide(){
+    console.log("animayion");
+    document.getElementById("slide").style.display = "block";
+    // document.getElementById("slide").style.webkitAnimation = "slide 0.5s forwards";
+    // -webkit-animation: slide 0.5s forwards;
+    document.getElementById("slide").style.animation = "slide 0.5s forwards";
+    // animation: slide 0.5s forwards;
+    var index = Math.floor(Math.random() * facts.length);
+    document.getElementById("slide").innerHTML = facts[index];
+    console.log(index);
+    // document.getElementById("slide").style.animation-delay
+    // animation: slide 0.5s forwards;
+    // animation-delay: 2s;
+}
