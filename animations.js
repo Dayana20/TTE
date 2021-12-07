@@ -2,6 +2,7 @@ var input = '';
 var gua = 0;
 var qui = 0;
 var san = 0;
+let guide_picked="False";
 
 console.log(this.input);
 var chosen = "False";
@@ -19,6 +20,7 @@ function getCharacter0(someForm) {
     // save data value
     localStorage.setItem("name", this.input);
     // alert(input);
+    guide_picked="True";
 }
 
 function getCharacter1(someForm) {
@@ -34,6 +36,7 @@ function getCharacter1(someForm) {
     // save data value
     localStorage.setItem("name", this.input);
     // alert(input);
+    guide_picked="True";
 }
 
 function getCharacter2(someForm) {
@@ -49,6 +52,15 @@ function getCharacter2(someForm) {
     // save data value
     localStorage.setItem("name", this.input);
     // alert(input);
+    guide_picked="True";
+}
+
+function canGo(){
+    if (guide_picked=="True"){
+        document.getElementById('change').href ="ecua.html";
+    } else{
+        alert("You Need To Pick A Character!");
+    }
 }
 
 
@@ -87,7 +99,7 @@ function changeText(id) {
         gua = 1;
     }
     else if(id=="food3"){
-        document.getElementById("message").innerHTML = "Don't Go Outside If You Don't Want To End Up In A Strangers Pool";
+        document.getElementById("message").innerHTML = "Carnaval! <br> Don't Go Outside If You Don't Want To End Up In A Strangers Pool";
         gua = 1;
     }
     // Quito
@@ -167,7 +179,7 @@ let facts = ["Julio Jaramillo<br>Everywhere you go, you will catch a song from J
             "September 26, all high school graduates go up to the flag one by one and stomp the ground in front of the flag<br><img class='f_imgs' src='https://lahora.com.ec/contenido/cache/45/adelantan-juramento-a-la-bandera-imagen-1-_20190922092741-2000x2000.jpg'>",
             "Las Penas: 444 steps <br><img class='f_imgs' src='https://media-cdn.tripadvisor.com/media/photo-s/03/e4/2b/c6/las-penas.jpg'>",
             "Languages spoken in Ecuador: Spanish and Kichwa (a Quechuan language of the Inca empire) <br><img class='f_imgs' src='https://www.planv.com.ec/sites/default/files/yaku-eolz39ow8amkilj.jpg'> <br>Yaku Pérez Fighting For Indigenous Rights"
-            ]
+            ];
 function slide(){
     console.log("animayion");
     document.getElementById("slide").style.display = "block";
@@ -178,7 +190,12 @@ function slide(){
     var index = Math.floor(Math.random() * facts.length);
     document.getElementById("slide").innerHTML = facts[index];
     console.log(index);
+
+
+    // document.getElementById("last_img").style.transform = "rotate(50deg)"
     // document.getElementById("slide").style.animation-delay
     // animation: slide 0.5s forwards;
     // animation-delay: 2s;
+
+
 }
