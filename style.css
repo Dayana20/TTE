@@ -482,3 +482,39 @@ body{
     height:300px;
     background-color: cadetblue;
 }
+
+/* maps */
+.map{
+    position: absolute;
+    left:95%;
+    width: 60px;
+}
+#mapG{
+    display:none;
+    position: absolute;
+    left:25%;
+    right:auto;
+    /* background-color: black; */
+    /* z-index: 100; */
+    height:90%;
+}
+
+#mapQ{
+    display:none;
+    position: absolute;
+    left:25%;
+    right:auto;
+    /* background-color: black; */
+    /* z-index: 100; */
+    height:90%;
+}
+
+#mapS{
+    display:none;
+    position: absolute;
+    left:0%;
+    right:auto;
+    /* background-color: black; */
+    /* z-index: 100; */
+    height:90%;
+}

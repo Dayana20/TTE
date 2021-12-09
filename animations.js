@@ -199,3 +199,15 @@ function slide(){
 
 
 }
+
+let Gcount = 0;
+function showMap(mapName){
+    if (Gcount==0){
+        document.getElementById(mapName).style.display = "block";
+        Gcount=1;
+    } else{
+        document.getElementById(mapName).style.display = "none";
+        Gcount=0;
+    }
+    // console.log(Gcount);
+}
