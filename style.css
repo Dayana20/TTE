@@ -484,11 +484,6 @@ body{
 }
 
 /* maps */
-.map{
-    position: absolute;
-    left:95%;
-    width: 60px;
-}
 #mapG{
     display:none;
     position: absolute;

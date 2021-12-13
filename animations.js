@@ -95,7 +95,7 @@ function changeText(id) {
         gua = 1;
     }
     else if(id=="food2"){
-        document.getElementById("message").innerHTML = "New Years? Lets Burn Things";
+        document.getElementById("message").innerHTML = "New Years? Let's Burn Things";
         gua = 1;
     }
     else if(id=="food3"){
@@ -121,7 +121,7 @@ function changeText(id) {
     }
     // Santa Elena
     else if(id=="elem4"){
-        document.getElementById("S_mes").innerHTML = "Lets Get Dangeriously Close To Whales";
+        document.getElementById("S_mes").innerHTML = "Let's Get Dangeriously Close To Whales";
         san = 1;
     }
     else if(id=="elem5"){
